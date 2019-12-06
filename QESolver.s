@@ -72,7 +72,7 @@
 	bc1t	imaginary		# If flag set, branch
 
 	mov.s	$f12, $f7
-	jal	sqrt			# Get sqrt(b^2 - 4ac)
+	jal	bsqrt			# Get sqrt(b^2 - 4ac)
 
 	neg.s	$f5, $f21		# f5 = -b
 	add.s	$f6, $f5, $f0		# f6 = -b + sqrt
